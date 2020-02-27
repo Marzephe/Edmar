@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title> Members</title>
+		<link rel="stylesheet" type="text/css" href="../css/style 1.css" />
+		<script type="text/javascript">
+		//Found at website: 
+		function randomizer(){
+			var myrandom=Math.round(Math.random()*3);
+			var links=new Array()
+				links[0]= "https://www.youtube.com/embed/vfTW4d7eHJo"
+				links[1]= "https://www.youtube.com/embed/h95eCm3Fkdg"
+				links[2]= "https://www.youtube.com/embed/_EX2UKHMvdc"
+				links[3]= "https://www.youtube.com/embed/fbacBJ8CsG0"
+		
+			var qoutes = new Array()
+				qoutes[0] = "Alencia has the best character design in the game </br> - Promesse"
+				qoutes[1] = "Ken is so freaking cool man </br> - Angelee"
+				qoutes[2] = "Honestly, she can bite me whenever </br> - DatGhostBoy"
+				qoutes[3] = "Chloe is yes. </br> - LemonFresh"			
+				
+			document.getElementById("video").src = links[myrandom];
+			document.getElementById("qoute").innerHTML = qoutes[myrandom];
+		} 
+		function windowSize(){
+			var divWidth = document.getElementById("videobox").offsetWidth;
+			videoWidth = divWidth*.8
+			document.getElementById("video").width = videoWidth;
+			document.getElementById("video").height = (videoWidth/16)*9;
+		}
+		window.onresize = windowSize;
+</script>
+	</head>
+<body onload="randomizer(), windowSize()">
+<div class="greenbox">
+		<div class="banner">
+			<img src="../images/UAHbanner.png"  align="center"width="98%" />
+		</div>
+	<ul>
+		<li><a href="aboutg2.html">About</a></li>
+		<li><a href="members2.html">Members</a></li>
+		<li><a class="active" href="reqg2.html">Member Requirement</a></li>
+		<li><a href="http://discord.gg/AutDED7">Discord</a></li>
+		<li><a href="aboutg1.html">xPlus Ultra</a></li>
+		<li><a href="../index.html">Home</a></li>
+	</ul>
+<div class="lgreenbox">
+	<div class="intro">
+		</br></br></br></br>We like our characters like how we like our other characters. 2 dimensional </br> Our members are freaks but they're fun freaks!  </br></br></br>
+		Refresh the Page for surprise </br>
+	</div>
+	
+	<div id="videobox" class="videobox">
+			<iframe id="video" src="" width="" height="" frameborder="0" 
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+					picture-in-picture" allowfullscreen>
+			</iframe>
+			<div class="quotes"
+				<p id="qoute"> TEST</p>
+			</div>
+	</div>
+</div>
+
+
+<ul>
+		<li><a href="aboutg2.html">About</a></li>
+		<li><a href="members2.html">Members</a></li>
+		<li><a class="active" href="reqg2.html">Member Requirement</a></li>
+		<li><a href="http://discord.gg/AutDED7">Discord</a></li>
+		<li><a href="aboutg1.html">xPlus Ultra</a></li>
+		<li><a href="../index.html">Home</a></li>
+</ul>
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

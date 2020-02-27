@@ -1,5 +1,5 @@
 body			{
-				background-image: url(b2t.png);
+				background-image: url(../images/b2t.png);
 				}
 
 h1				{
@@ -267,12 +267,27 @@ th 				{
 				}				
 				
 .videobox     	{
-				
 				margin-left: 15%; 
 				color:white;	
 				margin-top:10px;
 				}	
 				
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:5.25%;
+    position:relative;
+    height:0;
+	max-width: 100%;
+}
+.video-responsive object,.video-responsive iframe, .video-responsive embed{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+	
+}
+								
 .quotes 		{
 				
 				margin:5 5 5 5;
@@ -286,5 +301,15 @@ th 				{
 				text-align:center;
 				}
 				
+.heading  		{
+				font-size:30px;
+				text-align: center;
+				}
 				
+			
+.videobox2     	{
+				margin-left: 30%; 
+				color:white;	
+				margin-top:10px;
+				}	
 				

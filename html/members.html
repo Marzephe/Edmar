@@ -1,9 +1,9 @@
 <html>
 	<head>
 		<title> Members</title>
-		<link rel="stylesheet" type="text/css" href="style 1.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style 1.css" />
 		<script type="text/javascript">
-		
+		//Found at website: 
 		function randomizer(){
 			var myrandom=Math.round(Math.random()*6);
 			var links=new Array()
@@ -27,14 +27,20 @@
 				
 			document.getElementById("video").src = links[myrandom];
 			document.getElementById("qoute").innerHTML = qoutes[myrandom];
-
 		} 
+		function windowSize(){
+			var divWidth = document.getElementById("videobox").offsetWidth;
+			videoWidth = divWidth*.8
+			document.getElementById("video").width = videoWidth;
+			document.getElementById("video").height = (videoWidth/16)*9;
+		}
+		window.onresize = windowSize;
 </script>
 	</head>
-<body onload="randomizer()">
+<body onload="randomizer(), windowSize()">
 <div class="yellowbox">
 		<div class="banner">
-			<img src="XPUbanner.png"  align="center"width="98%" />
+			<img src="../images/XPUbanner.png"  align="center"width="98%" />
 		</div>
 	<ul>
 		<li><a href="aboutg1.html">About</a></li>
@@ -42,7 +48,7 @@
 		<li><a href="reqg1.html">Member Requirement</a></li>
 		<li><a href="http://discord.gg/AutDED7">Discord</a></li>
 		<li><a href="aboutg2.html">UAxHigh</a></li>
-		<li><a href="index.html">Home</a></li>
+		<li><a href="../index.html">Home</a></li>
 	</ul>
 <div class="bluebox">
 	<div class="intro">
@@ -50,12 +56,11 @@
 		Refresh the Page for something new! </br>
 	</div>
 	
-	<div class="videobox">
-		<iframe id="video" width="1000" height="650" src="" frameborder="0" 
-				allow="accelerometer; autoplay; encrypted-media; gyroscope; 
-				picture-in-picture" allowfullscreen>
-		</iframe>
-		
+	<div id="videobox" class="videobox">
+			<iframe id="video" src="" width="" height="" frameborder="0" 
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+					picture-in-picture" allowfullscreen>
+			</iframe>
 			<div class="quotes"
 				<p id="qoute"> TEST</p>
 			</div>
@@ -69,7 +74,7 @@
 		<li><a href="reqg1.html">Member Requirement</a></li>
 		<li><a href="http://discord.gg/AutDED7">Discord</a></li>
 		<li><a href="aboutg2.html">UAxHigh</a></li>
-		<li><a href="index.html">Home</a></li>
+		<li><a href="../index.html">Home</a></li>
 </ul>
 
 
