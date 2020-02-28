@@ -1,9 +1,27 @@
 <html>
 	<head>
-		<title> Requirements</title>
+		<title>Requirements</title>
 		<link rel="stylesheet" type="text/css" href="../css/style 1.css" />
+		<script type="text/javascript">
+		//Found at website: 
+		function windowSize(){
+			var divWidth = document.getElementById("videobox").offsetWidth;
+			videoWidth = divWidth*.8
+			document.getElementById("video1").width = videoWidth;
+			document.getElementById("video1").height = (videoWidth/16)*9;
+			document.getElementById("video2").width = videoWidth;
+			document.getElementById("video2").height = (videoWidth/16)*9;
+			document.getElementById("video3").width = videoWidth;
+			document.getElementById("video3").height = (videoWidth/16)*9;
+			document.getElementById("video4").width = videoWidth;
+			document.getElementById("video4").height = (videoWidth/16)*9;
+			document.getElementById("video5").width = videoWidth;
+			document.getElementById("video5").height = (videoWidth/16)*9;
+		}	
+		window.onresize = windowSize;
+		</script>
 	</head>
-<body>
+<body onload="windowSize()">
 <div class="greenbox">
 		<div class="banner">
 			<img src="../images/UAHbanner.png"  align="center"width="98%" />
@@ -20,18 +38,18 @@
 	<div class="heading">
 		Requirements: </br>
 	</div>
-	<div id="videobox" class="videobox2">
+	<div id="videobox" class="videobox">
 			Check in Daily </br>
 			Fight Guild Wars Daily </br>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/vIZbJo1aD-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </br>
+			<iframe id="video1" width="" height="" src="https://www.youtube.com/embed/vIZbJo1aD-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </br>
 			Fight World Boss Daily (except Thursday) </br>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/EWCWk6Vlnok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </br>
+			<iframe id="video2"width="" height="" src="https://www.youtube.com/embed/EWCWk6Vlnok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </br>
 			Request Mana Drake Claws Daily </br>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/W7CambtMROA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </br>
+			<iframe id="video3" width="" height="" src="https://www.youtube.com/embed/W7CambtMROA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </br>
 			Donate Gold Daily </br>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/tGgUfQO_CX4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </br>
+			<iframe id="video4" width="" height="" src="https://www.youtube.com/embed/tGgUfQO_CX4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </br>
 			Donate All Proof of Courage Daily </br>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/HLi2ulZQPy8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </br>	 
+			<iframe id="video5" width="" height="" src="https://www.youtube.com/embed/HLi2ulZQPy8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </br>	 
 		</div>	
 </div>
 
